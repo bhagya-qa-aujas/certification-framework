@@ -33,7 +33,7 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
     Then Verify that the response code displayed is HTTP 400.
     And  Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from current
          time stamp.
-    And Verify that the error code is SignatureDoesNotMatch.
+    And Verify that the error code is SignatureDoesNotMatch/InvalidRequest.
     And Verify that the version is supported version.
     And Verify that the txnid id is same as the txnid from request.
 

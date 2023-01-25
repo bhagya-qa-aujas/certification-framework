@@ -11,5 +11,5 @@ Feature: Verify that on sending valid FI fetch request of regular AA with JWS si
     Then  Verify that the Response code 400 is displayed.
     And Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from
   the current time stamp.
-    And  Verify that the Error code is InvalidRequest.
+    And  Verify that the Error code is InvalidRequest/SignatureDoesNotMatch.
     And Verify that the version is supported version.

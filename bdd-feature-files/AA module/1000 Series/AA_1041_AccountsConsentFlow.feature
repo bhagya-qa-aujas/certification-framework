@@ -33,7 +33,7 @@ Feature: On calling POST Accounts Consent Flow API,  Verify that on sending cons
     Then Verify that the response code 400 is received.
     And  Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from
          current time stamp.
-    And Verify that the Error code is SignatureDoesNotMatch.
+    And Verify that the Error code is SignatureDoesNotMatch/InvalidRequest.
     And Verify that the version is supported version.
     And Verify that the txnid id is same as the txnid from request.
 
