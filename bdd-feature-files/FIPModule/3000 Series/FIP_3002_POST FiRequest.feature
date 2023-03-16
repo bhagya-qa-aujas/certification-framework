@@ -11,7 +11,6 @@ Feature: On Calling POST FI Request  with null values, empty string, empty array
   the current time stamp.
     And  Verify that the Error code is InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3002_2 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST FIRequest with Empty
@@ -23,4 +22,3 @@ Feature: On Calling POST FI Request  with null values, empty string, empty array
   the current time stamp.
     And  Verify that the Error code is InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

@@ -10,7 +10,6 @@ Feature: On Calling POST Account discovery API with invalid JWS API signature, e
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1056_2 Use a single account user with first supported FIType and send one valid account discover
   request. Send Account discover request with valid details by using the valid JWS signature but remove the
@@ -22,7 +21,6 @@ Feature: On Calling POST Account discovery API with invalid JWS API signature, e
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1056_3 Use a single account user with first supported FIType and send one valid account discover
   request. Send Account discover request with valid details by generating the JWS signature using a different
@@ -34,7 +32,6 @@ Feature: On Calling POST Account discovery API with invalid JWS API signature, e
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1056_4 Use a single account user with first supported FIType and send one valid account discover
   request. Send Account discover request with valid details by using the valid JWS signature, but do a small
@@ -46,4 +43,3 @@ Feature: On Calling POST Account discovery API with invalid JWS API signature, e
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

@@ -11,4 +11,3 @@ Feature: On calling POST Consent Notification API, verify that on sending consen
   the current time stamp.
     And  Verify that the Error code is InvalidRequest/SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

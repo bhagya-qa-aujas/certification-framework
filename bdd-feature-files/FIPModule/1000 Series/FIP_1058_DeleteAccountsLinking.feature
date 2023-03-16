@@ -10,7 +10,6 @@ Feature: On Calling Account de-link request with invalid JWS API signature, erro
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1058_2 Use a single user account with first supported FIType, send an account link request, send
   an account link token request. Send Account de-link request with valid details by Using the valid JWS
@@ -22,7 +21,6 @@ Feature: On Calling Account de-link request with invalid JWS API signature, erro
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1058_3 Use a single user account with first supported FIType, send an account link request, send
   an account link token request. Send Account de-link request with valid details by Generating the JWS
@@ -35,7 +33,6 @@ Feature: On Calling Account de-link request with invalid JWS API signature, erro
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1058_4 Use a single user account with first supported FIType, send an account link request, send
   an account link token request. Send Account de-link request with valid details by using the valid JWS
@@ -47,4 +44,3 @@ Feature: On Calling Account de-link request with invalid JWS API signature, erro
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

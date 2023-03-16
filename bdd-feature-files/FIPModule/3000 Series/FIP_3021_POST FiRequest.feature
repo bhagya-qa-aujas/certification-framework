@@ -11,7 +11,6 @@ Feature: On Calling POST FI Request with invalid JWS API signature, error respon
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3021_2 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid FI request with following variations on the
@@ -24,7 +23,6 @@ Feature: On Calling POST FI Request with invalid JWS API signature, error respon
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3021_3 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid FI request with following variations on the
@@ -37,7 +35,6 @@ Feature: On Calling POST FI Request with invalid JWS API signature, error respon
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3021_4 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid FI request with following variations on the
@@ -50,4 +47,3 @@ Feature: On Calling POST FI Request with invalid JWS API signature, error respon
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

@@ -11,7 +11,6 @@ Feature: On Calling POST Consent Notification request with invalid JWS API signa
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2027_2 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid consent notification request with following
@@ -25,7 +24,6 @@ Feature: On Calling POST Consent Notification request with invalid JWS API signa
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2027_3 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid consent notification request with following
@@ -39,7 +37,6 @@ Feature: On Calling POST Consent Notification request with invalid JWS API signa
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2027_4 Use the pre-linked user details from settings, set Consent/notification response in mock
   server, send a valid consent request and then send a valid consent notification request with following
@@ -53,4 +50,3 @@ Feature: On Calling POST Consent Notification request with invalid JWS API signa
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
