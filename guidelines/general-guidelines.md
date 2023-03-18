@@ -50,6 +50,8 @@ UUIDs provide reliable uniqueness, hence they should be used where globally uniq
 
 Where timestamps are used to represent the request/response, validation should be performed to ensure they are not greater than 15 minutes in the past or future. Timestamps must comply with the ISO 8601 standard.
 
+The common understanding amongst all AAs is that all variations of the ISO 8601 time stamp must be honoured by implementations, not just a particular specific variation.
+
 ## Validation scope
 
 An implementation of the AA, FIP, FIU API may be liberal on the validation while accepting a request, however, it must always respond or generate requests as per the standard API specifications. In other words the APIs implementation may follow the 'Robustness principle' ""Be conservative in what you send, be liberal in what you accept"". This will enhance interoperability while allowing the implementors choose different platforms and languages. For example, a java based json library may accept and convert a number to string to match the specs and then perform business validations on it, however, it must generate a string representation of the same field when generating a request so that a NodeJs based implementation can successfully parse it as per the specifications.
