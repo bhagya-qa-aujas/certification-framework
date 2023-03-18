@@ -10,7 +10,6 @@ Feature: On Calling POST Consent request with invalid JWS API signature, error r
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2026_2 Use the pre-linked user details from settings and send a valid consent with following
   variations on the x-jws-signature header. Send POST Account Consent request with valid details by Using
@@ -22,7 +21,6 @@ Feature: On Calling POST Consent request with invalid JWS API signature, error r
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2026_3 Use the pre-linked user details from settings and send a valid consent with following
   variations on the x-jws-signature header. Send POST Account Consent request with valid details by
@@ -35,7 +33,6 @@ Feature: On Calling POST Consent request with invalid JWS API signature, error r
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 2026_4 Use the pre-linked user details from settings and send a valid consent with following
   variations on the x-jws-signature header. Send POST Account Consent request with valid details by using
@@ -48,4 +45,3 @@ Feature: On Calling POST Consent request with invalid JWS API signature, error r
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

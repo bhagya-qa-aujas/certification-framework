@@ -6,4 +6,8 @@ Feature: On calling POST Consent Notification API, verify that on sending consen
   status as ACTIVE with Alternate AA api key. Verify that the error response is received.
     Given Calling the POST Consent Notification API.
     When POST action is performed.
-    Then Verify that the error response is received.
+    Then  Verify that the Response code 400 is displayed.
+    And Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from
+  the current time stamp.
+    And  Verify that the Error code is InvalidRequest/SignatureDoesNotMatch.
+    And Verify that the version is supported version.

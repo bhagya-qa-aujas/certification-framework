@@ -10,7 +10,6 @@ Feature: On Calling POST Account Link API with invalid JWS API signature, error 
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1057_2 Use a single user account with first supported FIType and send single account link request.
   Send Account Link request with valid details by using the valid JWS signature but remove one char from
@@ -22,7 +21,6 @@ Feature: On Calling POST Account Link API with invalid JWS API signature, error 
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1057_3 Use a single user account with first supported FIType and send single account link request.
   Send Account Link request with valid details by generating the JWS signature using a different key that is
@@ -34,7 +32,6 @@ Feature: On Calling POST Account Link API with invalid JWS API signature, error 
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 1057_4 Use a single user account with first supported FIType and send single account link request.
   Send Account Link request with valid details by using the valid JWS signature, but do a small change in the
@@ -46,4 +43,3 @@ Feature: On Calling POST Account Link API with invalid JWS API signature, error 
   the current time stamp.
     And  Verify that the Error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

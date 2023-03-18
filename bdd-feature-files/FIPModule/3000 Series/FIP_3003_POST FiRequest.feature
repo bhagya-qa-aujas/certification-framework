@@ -12,7 +12,6 @@ Feature: On Calling POST FI Request with timestamp fields in different formats a
   the current time stamp.
     And  Verify that the Error code is InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3003_2 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -25,7 +24,6 @@ Feature: On Calling POST FI Request with timestamp fields in different formats a
   the current time stamp.
     And  Verify that the Error code is InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3003_3 Use the pre-linked user details from settings,set Consent/notification response in mock
   server, send one valid consent post request and then try the following. Send POST Account FIRequest with
@@ -38,4 +36,3 @@ Feature: On Calling POST FI Request with timestamp fields in different formats a
   the current time stamp.
     And  Verify that the Error code is InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.

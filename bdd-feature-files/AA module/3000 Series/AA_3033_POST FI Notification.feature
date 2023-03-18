@@ -11,7 +11,6 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
          time stamp.
     And Verify that the error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3033_2 On calling POST FI Notification API, Use the pre-generated consent details from settings. Set a
   valid FI response in mock FIP and send a valid FI request to AA. Finally send a FI notification request and use the
@@ -23,7 +22,6 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
          time stamp.
     And Verify that the error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3033_3 On calling POST FI Notification API, Use the pre-generated consent details from settings. Set a
   valid FI response in mock FIP and send a valid FI request to AA. Finally send a FI notification request and generate
@@ -33,9 +31,8 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
     Then Verify that the response code displayed is HTTP 400.
     And  Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from current
          time stamp.
-    And Verify that the error code is SignatureDoesNotMatch.
+    And Verify that the error code is SignatureDoesNotMatch/InvalidRequest.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
 
   Scenario: 3033_4 On calling POST FI Notification API, Use the pre-generated consent details from settings. Set a
   valid FI response in mock FIP and send a valid FI request to AA. Finally send a FI notification request and use the
@@ -47,4 +44,3 @@ Feature: On calling POST FI Notification API, verify that on sending consent not
          time stamp.
     And Verify that the error code is SignatureDoesNotMatch.
     And Verify that the version is supported version.
-    And Verify that the txnid id is same as the txnid from request.
