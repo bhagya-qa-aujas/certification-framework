@@ -1,4 +1,4 @@
-# Sahamati Certification Framework
+## Sahamati Certification Framework
 
 > 🎉NEW: Introducing Behavior Driven Development (BDD) based feature files describing test scenarios for all entities using [Gherkin](https://cucumber.io/docs/gherkin/reference/). Check out the [features files here](/bdd-feature-files).
 
