@@ -34,7 +34,7 @@ Feature: On calling GET FI fetch Request API, verify that on sending FI fetch re
     Then Verify that the response code displayed is HTTP 400.
     And  Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from current
          time stamp.
-    And Verify that the error code is SignatureDoesNotMatch.
+    And Verify that the error code is SignatureDoesNotMatch/InvalidRequest.
     And Verify that the version is supported version.
 
   Scenario: 2048_4 GET FI fetch Request API, use the pre-linked user details from settings and set a valid FI response

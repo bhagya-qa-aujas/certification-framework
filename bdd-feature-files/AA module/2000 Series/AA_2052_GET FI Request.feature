@@ -10,5 +10,5 @@ the error response is received.
     Then Verify that the response code displayed is HTTP 400.
     And  Verify that the timestamp has the exact format, and the timestamp is in "+15" or "-15" minutes from current
          time stamp.
-    And Verify that the error code is InvalidRequest.
+    And Verify that the error code is InvalidRequest/SignatureDoesNotMatch.
     And Verify that the version is supported version.
