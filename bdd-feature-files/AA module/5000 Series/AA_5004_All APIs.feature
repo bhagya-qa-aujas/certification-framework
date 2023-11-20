@@ -12,7 +12,7 @@ Feature:On calling All APIs, verify that on FIP operating with DIRECT authentica
   7. Ask the user to select the single linked account from mock FIP, approve the consent and confirm.
   8. Set POST consent response in FIP mock server.
   9. Set consent notification response in FIU mock server.
-  10. Send a valid consent handle to receive READY status as mock FIU.
+  10. Send a valid consent handle to receive APPROVED status as mock FIU.
   11. Validate that a consent notification with ready status is received in mock FIU.
   12. Send a consent GET request as mock FIU and validate the consent details and signature.
   13. Validate that a consent POST request is received in mock FIP with correct consent details.
@@ -23,6 +23,6 @@ Feature:On calling All APIs, verify that on FIP operating with DIRECT authentica
   18. Send a FI ready notification to AA as mock FIP.
   19. Wait to receive FI notification in mock FIU.
   20. Send a FI fetch request as mock FIU and validate that the same encrypted FI data is received.
-    Given Calling the All APIs.
-    When Full Floow action is performed.
-    Then Verify that AA is able to link FIP and facilitate the FI data retrival for FIU.
+    Given Calling the All APIs
+    When  Full Floow action is performed
+    Then  Verify that AA is able to link FIP and facilitate the FI data retrival for FIU
