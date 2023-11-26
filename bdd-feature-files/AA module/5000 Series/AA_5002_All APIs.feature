@@ -12,7 +12,7 @@ Feature:On calling All APIs, verify that on consent requested to user currently 
   approve the consent and confirm.
   8. Validate that the account discover, link and token link request are received in the mock FIP as per the
   instructions in the step-5.
-  9. Send a valid consent handle to receive READY status as mock FIU.
+  9. Send a valid consent handle to receive APPROVED status as mock FIU.
   10. Validate that a consent notification with ready status is received in mock FIU.
   11. Send a consent GET request as mock FIU and validate the consent details and signature.
   12. Validate that a consent POST request is received in mock FIP with correct consent details.
@@ -23,6 +23,6 @@ Feature:On calling All APIs, verify that on consent requested to user currently 
   17. Send a FI ready notification to AA as mock FIP.
   18. Wait to receive FI notification in mock FIU.
   19. Send a FI fetch request as mock FIU and validate that the same encrypted FI data is received.
-    Given Calling the All APIs.
-    When Full Floow action is performed.
-    Then Verify that FIU is able to retrive the FI data successfully.
+    Given Calling the All APIs
+    When  Full Floow action is performed
+    Then  Verify that FIU is able to retrive the FI data successfully

@@ -12,7 +12,7 @@ Feature:On calling All APIs, verify that on consent paused and activated back by
   6. Set consent notification response in FIU mock server.
   7. Send a valid consent request for DEPOSIT FIType as mock FIU.
   8. Ask the user to select the single linked account from mock FIP, approve the consent and confirm.
-  9. Send a valid consent handle to receive READY status as mock FIU.
+  9. Send a valid consent handle to receive APPROVED status as mock FIU.
   10. Validate that a consent notification with ready status is received in mock FIU.
   11. Send a consent GET request as mock FIU and validate the consent details and signature.
   12. Validate that a consent POST request is received in mock FIP with correct consent details.
@@ -31,6 +31,6 @@ Feature:On calling All APIs, verify that on consent paused and activated back by
   25. Wait to receive FI notification in mock FIU.
   26. Set the FI fetch response with random encryptedFI data in mock FIP.
   27. Send a FI fetch request as mock FIU and validate that the same encrypted FI data is received.
-    Given Calling the All APIs.
-    When Full Floow action is performed.
-    Then Verify that AA is able to facilitate the FI data retrival for FIU.
+    Given Calling the All APIs
+    When  Full Floow action is performed
+    Then  Verify that AA is able to facilitate the FI data retrival for FIU
